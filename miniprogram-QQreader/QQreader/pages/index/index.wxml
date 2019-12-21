@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="page-head">
+    <text>{{motto}}</text>
+  </view>
+
+
+  <view class="btn-area">
+         <button class="mini-btn" type="default" bindtap="addfile">选择文件</button>
+
+        <text class="page-section_center">已选文件： {{filename}}</text>
+
+        <button type="primary" formType="submit" bindtap="loadfile">确认上传</button>
+  </view>
+
+
+</view>

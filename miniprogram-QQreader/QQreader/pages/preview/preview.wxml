@@ -1,0 +1,8 @@
+<!--pages/preview/preview.wxml-->
+<text class="page-head">文件预览界面</text>
+
+<view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text>{{text}}</text>
+</view>
+      
+<button class = 'button' type="primary" formType="submit" bindtap="generate">开始生成</button>

@@ -1,0 +1,23 @@
+
+var read = {
+questionG: function (idQ, text, dicQ) {
+  question = ""
+  //读取问题
+  while (text[app.iterator] != '#') {
+    question += text[app.iterator];
+    app.iterator++
+  }
+  app.iterator++ ,
+    //加入字典
+    dicQ['idQ'] = question
+},
+
+answerG: function(idA, text, dicA){
+
+}
+
+}
+
+module.exports = {
+  questionG: read.questionG
+}

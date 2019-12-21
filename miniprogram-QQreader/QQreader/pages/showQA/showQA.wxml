@@ -1,0 +1,28 @@
+<!--pages/showQA/showQA.wxml-->
+<import src="../lib/head.wxml" />
+<import src="../lib/foot.wxml" />
+
+<text class="page-head">预览即将导入的问题和回答</text>
+
+<view class="container">
+
+<view class="area">
+  <view class = "left-title"> Questions</view>
+  <block wx:for="{{listQue}}" wx:for-item="question" wx:key="id">
+    <view class = "items">
+    <text class="question">{{ question.id }}.  <text class="name">{{question.name}}:</text>  {{ question.content }} ({{question.time}})</text>
+    </view>
+  </block>
+ </view>
+
+ <view class="area">
+  <view class = "right-title"> Answers</view>
+  <block wx:for="{{listAns}}" wx:for-item="answer" wx:key="id">
+    <view class = "items">
+    <text class="answer">{{ answer.id }}. <text class="name">{{answer.name}}:</text>  {{ answer.content }} ({{answer.time}})</text>
+    </view>
+  </block>
+</view>
+
+
+</view>
