@@ -11,3 +11,5 @@
 3.实现简述
 * 微信小程序申请浏览获得txt文件的过程走了不少弯路，详细实现见代码实现的index.js文件
 * 从聊天记录导出正确的问题和回答利用的是我们的标识格式；而同时导出回答人和回答时间是通过分析txt文件导出规则，利用DFA（有限状态自动机）实现。DFA示意图如下：
+
+![image](https://github.com/CharlesGuan1999/QQreader/blob/master/image/QQAnalyzer.png)
